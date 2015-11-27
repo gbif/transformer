@@ -1,0 +1,889 @@
+ID_CENSO;Date;SECTOR;Species;Individuals;Notes;Starting time;Finishing time;Cloudiness;Wind speed;Wind direction;Waves
+CP19930107;07-ene-93;CAMA;Calidris alba;37;-;-;-;-;-;-;-
+CP19930107;07-ene-93;CAMA;Corvus corax;3;-;-;-;-;-;-;-
+CP19930107;07-ene-93;CAMA;Larus fuscus;76;-;-;-;-;-;-;-
+CP19930107;07-ene-93;CAMA;Larus michahellis;1;-;-;-;-;-;-;-
+CP19930107;07-ene-93;CAMA;Larus sp.;25;L. fuscus / L. michahellis juveniles;-;-;-;-;-;-
+CP19930107;07-ene-93;CAMA;Melanitta nigra;26;-;-;-;-;-;-;-
+CP19930107;07-ene-93;MAZA;Calidris alba;14;-;-;-;-;-;-;-
+CP19930107;07-ene-93;MAZA;Chroicocephalus ridibundus;23;-;-;-;-;-;-;-
+CP19930107;07-ene-93;MAZA;Haematopus ostralegus;129;-;-;-;-;-;-;-
+CP19930107;07-ene-93;MAZA;Larus fuscus;694;-;-;-;-;-;-;-
+CP19930107;07-ene-93;MAZA;Larus michahellis;106;-;-;-;-;-;-;-
+CP19930107;07-ene-93;MAZA;Larus sp.;106;L. fuscus / L. michahellis juveniles;-;-;-;-;-;-
+CP19930107;07-ene-93;MAZA;Melanitta nigra;67;-;-;-;-;-;-;-
+CP19930107;07-ene-93;MAZA;Sterna sandvicensis;5;-;-;-;-;-;-;-
+CP19930107;07-ene-93;ZACA;Calidris alba;41;-;-;-;-;-;-;-
+CP19930107;07-ene-93;ZACA;Chroicocephalus ridibundus;2;-;-;-;-;-;-;-
+CP19930107;07-ene-93;ZACA;Haematopus ostralegus;94;-;-;-;-;-;-;-
+CP19930107;07-ene-93;ZACA;Larus fuscus;293;-;-;-;-;-;-;-
+CP19930107;07-ene-93;ZACA;Larus michahellis;2;-;-;-;-;-;-;-
+CP19930107;07-ene-93;ZACA;Larus sp.;119;L. fuscus / L. michahellis juveniles;-;-;-;-;-;-
+CP19930107;07-ene-93;ZACA;Melanitta nigra;130;-;-;-;-;-;-;-
+CP19930107;07-ene-93;ZACA;Sterna sandvicensis;3;-;-;-;-;-;-;-
+CP19930122;22-ene-93;CAMA;Calidris alba;47;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;CAMA;Charadrius alexandrinus;1;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;CAMA;Corvus corax;1;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;CAMA;Haematopus ostralegus;9;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;CAMA;Larus fuscus;288;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;CAMA;Larus michahellis;3;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;CAMA;Melanitta nigra;187;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;MAZA;Calidris alba;2;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;MAZA;Charadrius alexandrinus;5;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;MAZA;Chroicocephalus ridibundus;22;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;MAZA;Haematopus ostralegus;226;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;MAZA;Larus fuscus;1236;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;MAZA;Larus michahellis;119;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;MAZA;Melanitta nigra;180;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;MAZA;Sterna sandvicensis;5;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;ZACA;Calidris alba;8;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;ZACA;Charadrius alexandrinus;2;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;ZACA;Corvus corax;4;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;ZACA;Haematopus ostralegus;7;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;ZACA;Larus fuscus;375;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;ZACA;Larus michahellis;5;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;ZACA;Melanitta nigra;199;-;11:00;12:00;4;1;N;0
+CP19930122;22-ene-93;ZACA;Puffinus yelkouan;5;-;11:00;12:00;4;1;N;0
+CP19930303;03-mar-93;CAMA;Alca torda;80;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Anas acuta;330;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Anas crecca;50;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Anas strepera;75;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Calidris alba;51;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Charadrius alexandrinus;5;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Haematopus ostralegus;18;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Larus fuscus;57;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Larus michahellis;2;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Melanitta nigra;350;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Morus bassanus;3;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Sterna hirundo;5;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;CAMA;Sterna sandvicensis;65;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Alca torda;4;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Anas clypeata;25;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Calidris alba;2;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Charadrius alexandrinus;2;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Chroicocephalus ridibundus;55;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Haematopus ostralegus;123;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Hirundo rustica;1;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Larus fuscus;102;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Larus michahellis;23;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Melanitta nigra;451;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Stercorarius parasiticus;1;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;MAZA;Sterna sandvicensis;59;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;ZACA;Alca torda;51;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;ZACA;Calidris alba;44;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;ZACA;Chroicocephalus ridibundus;17;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;ZACA;Haematopus ostralegus;40;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;ZACA;Larus fuscus;11;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;ZACA;Larus sp.;60;L.fuscus / L.michahellis;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;ZACA;Melanitta nigra;10;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;ZACA;Puffinus yelkouan;6;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;ZACA;Sterna hirundo;55;-;14:00;17:00;2;1;E;0
+CP19930303;03-mar-93;ZACA;Sterna sandvicensis;270;-;14:00;17:00;2;1;E;0
+CP19930317;17-mar-93;CAMA;Calidris alba;181;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;CAMA;Falco tinnunculus;1;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;CAMA;Larus sp.;15;L.fuscus / L.michahellis;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;CAMA;Melanitta nigra;100;Como m›nimo;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;CAMA;Sterna sandvicensis;20;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;MAZA;Charadrius alexandrinus;1;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;MAZA;Egretta garzetta;15;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;MAZA;Haematopus ostralegus;180;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;MAZA;Himantopus himantopus;19;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;MAZA;Larus fuscus;171;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;MAZA;Larus michahellis;31;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;MAZA;Milvus migrans;1;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;MAZA;Sterna sandvicensis;36;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;ZACA;Calidris alba;10;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;ZACA;Charadrius alexandrinus;2;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;ZACA;Egretta garzetta;1;-;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;ZACA;Larus sp.;30;L.fuscus / L.michahellis;12:45;14:00;0;2;E;0
+CP19930317;17-mar-93;ZACA;Sterna sandvicensis;11;-;12:45;14:00;0;2;E;0
+CP19930324;24-mar-93;CAMA;Calidris alba;250;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;CAMA;Haematopus ostralegus;6;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;CAMA;Larus audouinii;1;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;CAMA;Larus fuscus;145;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;CAMA;Larus michahellis;5;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;CAMA;Larus sp.;200;L.fuscus / L.michahellis;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;CAMA;Sterna hirundo;15;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;CAMA;Sterna sandvicensis;96;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Calidris alba;5;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Chroicocephalus genei;1;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Chroicocephalus ridibundus;8;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Haematopus ostralegus;100;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Himantopus himantopus;11;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Larus audouinii;2;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Larus fuscus;255;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Larus melanocephalus;2;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Larus michahellis;21;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Melanitta nigra;21;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Stercorarius skua;1;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Sterna hirundo;2;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;MAZA;Sterna sandvicensis;21;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;ZACA;Alca torda;2;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;ZACA;Corvus corax;2;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;ZACA;Haematopus ostralegus;6;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;ZACA;Larus fuscus;25;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;ZACA;Larus michahellis;1;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;ZACA;Larus sp.;58;L.fuscus / L.michahellis;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;ZACA;Melanitta nigra;60;-;10:45;12:00;0;1;N;0
+CP19930324;24-mar-93;ZACA;Sterna sandvicensis;20;-;10:45;12:00;0;1;N;0
+CP19930405;05-abr-93;CAMA;Calidris alba;145;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;CAMA;Charadrius alexandrinus;1;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;CAMA;Corvus corax;2;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;CAMA;Falco peregrinus;2;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;CAMA;Larus fuscus;14;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;CAMA;Milvus migrans;8;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;MAZA;Charadrius alexandrinus;1;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;MAZA;Corvus corax;1;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;MAZA;Egretta garzetta;1;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;MAZA;Haematopus ostralegus;106;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;MAZA;Larus fuscus;499;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;MAZA;Larus michahellis;40;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;MAZA;Milvus migrans;5;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;MAZA;Sterna sandvicensis;100;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;ZACA;Anas sp.;70;A. clypeata y A. acuta;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;ZACA;Calidris alba;8;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;ZACA;Corvus corax;3;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;ZACA;Falco peregrinus;2;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;ZACA;Haematopus ostralegus;10;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;ZACA;Larus fuscus;105;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;ZACA;Larus michahellis;4;-;18:20;19:45;2;2;S;2
+CP19930405;05-abr-93;ZACA;Milvus migrans;1;-;18:20;19:45;2;2;S;2
+CP19930412;12-abr-93;CAMA;Calidris alba;23;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;CAMA;Charadrius alexandrinus;2;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;CAMA;Corvus corax;2;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;CAMA;Larus fuscus;25;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;CAMA;Melanitta nigra;2;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;MAZA;Calidris alba;40;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;MAZA;Charadrius alexandrinus;10;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;MAZA;Chroicocephalus ridibundus;30;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;MAZA;Haematopus ostralegus;112;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;MAZA;Hydroprogne caspia;1;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;MAZA;Larus fuscus;407;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;MAZA;Larus michahellis;12;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;MAZA;Sterna sandvicensis;25;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;MAZA;Sterna sp.;30;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;ZACA;Calidris alba;34;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;ZACA;Corvus corax;2;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;ZACA;Haematopus ostralegus;10;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;ZACA;Larus fuscus;18;-;13:05;14:40;2;2;W;3
+CP19930412;12-abr-93;ZACA;Melanitta nigra;1;-;13:05;14:40;2;2;W;3
+CP19930419;19-abr-93;CAMA;Calidris alba;60;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;CAMA;Milvus migrans;3;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;CAMA;Numenius phaeopus;1;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Charadrius hiaticula;5;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Egretta garzetta;7;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Haematopus ostralegus;155;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Larus fuscus;420;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Larus michahellis;18;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Melanitta nigra;3;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Mergus serrator;2;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Numenius phaeopus;1;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Recurvirostra avosetta;3;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Sterna bengalensis;1;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;MAZA;Tringa totanus;2;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;ZACA;Actitis hypoleucos;1;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;ZACA;Arenaria interpres;1;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;ZACA;Calidris alba;205;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;ZACA;Calidris alpina;1;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;ZACA;Haematopus ostralegus;5;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;ZACA;Larus fuscus;5;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;ZACA;Sterna sandvicensis;2;-;-;10:40;0;1;E;0
+CP19930419;19-abr-93;ZACA;Sternula albifrons;2;-;-;10:40;0;1;E;0
+CP19930427;27-abr-93;CAMA;Calidris alba;5;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;CAMA;Sterna sandvicensis;1;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Calidris alba;10;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Charadrius alexandrinus;2;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Chroicocephalus genei;3;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Chroicocephalus ridibundus;1;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Egretta garzetta;1;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Haematopus ostralegus;113;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Larus fuscus;158;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Larus michahellis;50;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Numenius phaeopus;1;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Sterna sandvicensis;30;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;MAZA;Sternula albifrons;20;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;ZACA;Calidris alba;8;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;ZACA;Charadrius alexandrinus;3;-;11:10;12:30;0;2;W;2
+CP19930427;27-abr-93;ZACA;Sterna sandvicensis;1;-;11:10;12:30;0;2;W;2
+CP19930505;05-may-93;CAMA;Calidris alba;135;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;CAMA;Corvus corax;1;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;CAMA;Larus sp.;36;L.fuscus / L.michahellis;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Calidris alba;62;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Chlidonias hybrida;30;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Chlidonias niger;80;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Chroicocephalus genei;3;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Haematopus ostralegus;100;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Larus audouinii;2;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Larus fuscus;1091;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Larus michahellis;35;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Morus bassanus;2;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Sterna hirundo;7;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Sterna sandvicensis;6;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;MAZA;Sternula albifrons;95;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;ZACA;Calidris alba;67;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;ZACA;Charadrius alexandrinus;6;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;ZACA;Corvus corax;1;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;ZACA;Pluvialis squatarola;11;-;10:10;9:50;4;1;W;2
+CP19930505;05-may-93;ZACA;Sternula albifrons;5;-;10:10;9:50;4;1;W;2
+CP19930510;10-may-93;CAMA;Calidris alba;6;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;CAMA;Milvus migrans;1;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Calidris alba;34;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Charadrius alexandrinus;2;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Chroicocephalus genei;3;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Corvus corax;3;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Haematopus ostralegus;82;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Larus sp.;192;L.fuscus / L.michahellis;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Limosa lapponica;2;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Milvus migrans;6;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Sterna hirundo;10;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Sterna sandvicensis;25;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;MAZA;Sternula albifrons;30;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;ZACA;Calidris alba;55;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;ZACA;Haematopus ostralegus;3;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;ZACA;Larus fuscus;1;-;11:00;12:15;-;-;-;-
+CP19930510;10-may-93;ZACA;Sterna sandvicensis;28;-;11:00;12:15;-;-;-;-
+CP19930517;17-may-93;CAMA;Calidris alba;2;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;CAMA;Charadrius alexandrinus;1;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;CAMA;Chroicocephalus genei;1;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;CAMA;Larus michahellis;1;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;CAMA;Larus sp.;60;L.fuscus / L.michahellis;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;MAZA;Calidris alba;22;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;MAZA;Chroicocephalus genei;1;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;MAZA;Haematopus ostralegus;76;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;MAZA;Larus michahellis;22;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;MAZA;Larus sp.;173;L.fuscus / L.michahellis;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;MAZA;Sterna hirundo;1;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;MAZA;Sterna sandvicensis;1;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;MAZA;Sternula albifrons;7;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;ZACA;Calidris alba;10;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;ZACA;Haematopus ostralegus;16;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;ZACA;Larus michahellis;1;-;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;ZACA;Larus sp.;18;L.fuscus / L.michahellis;17:25;18:15;-;-;-;-
+CP19930517;17-may-93;ZACA;Sternula albifrons;9;-;17:25;18:15;-;-;-;-
+CP19930802;02-ago-93;CAMA;Calidris alba;20;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;CAMA;Larus audouinii;2;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;CAMA;Larus fuscus;21;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;CAMA;Larus michahellis;17;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;MAZA;Charadrius alexandrinus;2;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;MAZA;Chroicocephalus ridibundus;10;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;MAZA;Haematopus ostralegus;24;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;MAZA;Larus audouinii;14;3 subadultos, 9 inmaduros, 2 jævenes;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;MAZA;Larus fuscus;276;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;MAZA;Larus michahellis;193;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;MAZA;Numenius phaeopus;2;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;MAZA;Sterna hirundo;2;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;MAZA;Sterna sandvicensis;25;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;ZACA;Haematopus ostralegus;7;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;ZACA;Larus audouinii;17;4 subadultos, 6 inmaduros, 7 jævenes;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;ZACA;Larus fuscus;87;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;ZACA;Larus michahellis;27;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;ZACA;Milvus migrans;2;-;10:20;9:55;0;1;NE;0
+CP19930802;02-ago-93;ZACA;Sterna sandvicensis;1;-;10:20;9:55;0;1;NE;0
+CP19930809;09-ago-93;CAMA;Corvus corax;1;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;CAMA;Haematopus ostralegus;2;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;CAMA;Larus audouinii;3;1 inmaduro, 2 jævenes;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;CAMA;Larus fuscus;60;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;CAMA;Larus michahellis;23;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;MAZA;Calidris alba;50;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;MAZA;Chroicocephalus ridibundus;21;5 jævenes, 16 indeterminados;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;MAZA;Haematopus ostralegus;56;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;MAZA;Larus audouinii;21;7 subadultos, 11 inmaduros, 2 jævenes, 1 adulto.;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;MAZA;Larus fuscus;336;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;MAZA;Larus michahellis;223;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;MAZA;Sterna sandvicensis;55;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;MAZA;Sternula albifrons;1;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;ZACA;Calidris alba;15;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;ZACA;Corvus corax;6;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;ZACA;Haematopus ostralegus;2;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;ZACA;Larus audouinii;9;4 subadultos, 4 inmaduros, 1 joven;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;ZACA;Larus fuscus;72;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;ZACA;Larus michahellis;43;-;14:00;15:30;0;2;S;2
+CP19930809;09-ago-93;ZACA;Sterna sandvicensis;11;-;14:00;15:30;0;2;S;2
+CP19930817;17-ago-93;CAMA;Calidris alba;6;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;CAMA;Charadrius alexandrinus;1;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;CAMA;Corvus corax;2;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;CAMA;Hirundo rustica;2;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;CAMA;Larus audouinii;3;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;CAMA;Larus fuscus;65;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;CAMA;Larus michahellis;27;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Actitis hypoleucos;1;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Chlidonias niger;3;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Chroicocephalus ridibundus;6;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Haematopus ostralegus;103;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Larus argentatus;1;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Larus audouinii;32;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Larus fuscus;363;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Larus michahellis;202;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Sterna hirundo;1;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Sterna sandvicensis;38;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;MAZA;Sternula albifrons;5;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;ZACA;Calidris alba;20;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;ZACA;Corvus corax;3;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;ZACA;Larus audouinii;11;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;ZACA;Larus fuscus;139;-;11:15;12:05;4;1;SW;2
+CP19930817;17-ago-93;ZACA;Larus michahellis;36;-;11:15;12:05;4;1;SW;2
+CP19930823;23-ago-93;CAMA;Calidris alba;102;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;CAMA;Charadrius alexandrinus;3;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;CAMA;Corvus corax;2;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;CAMA;Larus audouinii;3;jævenes;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;CAMA;Larus fuscus;73;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;CAMA;Larus michahellis;22;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;CAMA;Sternula albifrons;2;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Calidris alba;12;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Charadrius alexandrinus;3;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Charadrius dubius;2;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Chlidonias niger;390;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Chroicocephalus genei;24;13 jævenes;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Chroicocephalus ridibundus;95;2 jævenes;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Corvus corax;1;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Haematopus ostralegus;149;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Larus audouinii;8;3 jævenes, 4 inmaduros, 1 subadulto;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Larus fuscus;496;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Larus michahellis;169;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Sterna sandvicensis;73;2 jævenes;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;MAZA;Sternula albifrons;50;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;ZACA;Calidris alba;22;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;ZACA;Charadrius alexandrinus;4;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;ZACA;Chlidonias niger;1;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;ZACA;Corvus corax;3;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;ZACA;Haematopus ostralegus;1;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;ZACA;Larus audouinii;2;1 inmaduro;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;ZACA;Larus fuscus;80;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;ZACA;Larus michahellis;19;-;11:40;13:45;4;1;S;2
+CP19930823;23-ago-93;ZACA;Sterna sandvicensis;3;1 joven;11:40;13:45;4;1;S;2
+CP19930830;30-ago-93;CAMA;Apus sp.;50;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;CAMA;Calidris alba;114;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;CAMA;Larus fuscus;165;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;CAMA;Larus michahellis;31;2 jævenes atropellados juntos junto a la entrada del rancho Chimbo;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;CAMA;Morus bassanus;2;jævenes;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;CAMA;Sterna sandvicensis;1;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Apus sp.;300;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Calidris alba;55;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Charadrius alexandrinus;1;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Charadrius dubius;1;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Chlidonias hybrida;7;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Chlidonias niger;45;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Chroicocephalus genei;14;1 joven;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Chroicocephalus ridibundus;153;1 individuo petroleado 60%;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Circus cyaneus;1;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Egretta garzetta;2;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Haematopus ostralegus;212;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Larus audouinii;1;adulto;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Larus fuscus;899;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Larus michahellis;158;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Limosa lapponica;7;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Morus bassanus;4;jævenes;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Philomachus pugnax;1;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Stercorarius parasiticus;1;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Sterna hirundo;70;1 joven;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Sterna sandvicensis;151;10 jævenes;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;MAZA;Sternula albifrons;390;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Apus sp.;50;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Calidris alba;10;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Charadrius alexandrinus;1;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Corvus corax;1;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Haematopus ostralegus;11;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Hirundo rustica;6;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Larus audouinii;1;Inmaduro;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Larus fuscus;194;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Larus michahellis;62;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Limosa lapponica;22;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Morus bassanus;6;jævenes;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Sterna sandvicensis;2;-;10:15;11:05;0;2;E;2
+CP19930830;30-ago-93;ZACA;Sternula albifrons;2;-;10:15;11:05;0;2;E;2
+CP19930907;07-sep-93;CAMA;Calidris alba;74;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;CAMA;Charadrius alexandrinus;47;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;CAMA;Haematopus ostralegus;1;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;CAMA;Larus audouinii;1;adulto, pico negro, foto;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;CAMA;Larus fuscus;140;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;CAMA;Larus sp.;23;Inmaduros de L.fuscus / L.michahellis;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;CAMA;Sterna sandvicensis;9;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Calidris alba;32;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Charadrius alexandrinus;1;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Chlidonias niger;294;19 en vuelo;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Chroicocephalus ridibundus;3;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Corvus corax;1;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Haematopus ostralegus;181;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Larus audouinii;5;1 casi adulto, 1 adulto, 3 segundo a±o;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Larus fuscus;435;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Larus sp.;64;Inmaduros de L.fuscus / L.michahellis;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Limosa lapponica;2;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Sterna hirundo;4;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Sterna sandvicensis;17;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;MAZA;Sternula albifrons;2;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;ZACA;Calidris alba;19;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;ZACA;Charadrius alexandrinus;3;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;ZACA;Corvus corax;2;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;ZACA;Haematopus ostralegus;19;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;ZACA;Larus audouinii;4;1 adultos, 3 segundo a±o;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;ZACA;Larus fuscus;145;-;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;ZACA;Larus sp.;27;Inmaduros de L.fuscus / L.michahellis;13:44;15:50;-;-;-;-
+CP19930907;07-sep-93;ZACA;Sterna sandvicensis;11;-;13:44;15:50;-;-;-;-
+CP19930914;14-sep-93;CAMA;Calidris alba;37;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;CAMA;Larus fuscus;89;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;CAMA;Larus sp.;14;Inmaduros de L.fuscus / L.michahellis;-;12:05;-;-;-;-
+CP19930914;14-sep-93;CAMA;Limosa lapponica;2;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;CAMA;Sternula albifrons;2;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;MAZA;Calidris alba;3;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;MAZA;Charadrius alexandrinus;1;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;MAZA;Chroicocephalus genei;1;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;MAZA;Chroicocephalus ridibundus;13;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;MAZA;Haematopus ostralegus;205;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;MAZA;Larus audouinii;4;2 adultos, 1 casi adulto;-;12:05;-;-;-;-
+CP19930914;14-sep-93;MAZA;Larus fuscus;409;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;MAZA;Larus sp.;25;Inmaduros de L.fuscus / L.michahellis;-;12:05;-;-;-;-
+CP19930914;14-sep-93;MAZA;Sterna sandvicensis;11;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;MAZA;Sternula albifrons;2;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;ZACA;Charadrius alexandrinus;1;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;ZACA;Chroicocephalus ridibundus;1;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;ZACA;Corvus corax;3;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;ZACA;Haematopus ostralegus;9;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;ZACA;Larus audouinii;2;1 adulto, 1 casi adulto;-;12:05;-;-;-;-
+CP19930914;14-sep-93;ZACA;Larus fuscus;160;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;ZACA;Larus sp.;12;Inmaduros de L.fuscus / L.michahellis;-;12:05;-;-;-;-
+CP19930914;14-sep-93;ZACA;Limosa lapponica;2;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;ZACA;Sterna hirundo;18;-;-;12:05;-;-;-;-
+CP19930914;14-sep-93;ZACA;Sterna sandvicensis;26;-;-;12:05;-;-;-;-
+CP19930921;21-sep-93;CAMA;Calidris alba;198;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;CAMA;Charadrius alexandrinus;51;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;CAMA;Chroicocephalus ridibundus;1;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;CAMA;Larus audouinii;2;1 joven, 1 inmaduro con ocelos;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;CAMA;Larus fuscus;84;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;CAMA;Larus michahellis;11;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;CAMA;Limosa lapponica;2;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;CAMA;Sterna sandvicensis;2;1 joven;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Ardea cinerea;1;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Calidris alba;24;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Charadrius alexandrinus;2;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Chlidonias niger;186;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Chroicocephalus ridibundus;144;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Haematopus ostralegus;194;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Larus audouinii;2;1 joven, 1 inmaduro con ocelos;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Larus fuscus;474;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Larus marinus;1;Adulto;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Larus michahellis;179;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Limosa lapponica;1;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Morus bassanus;9;Jævenes;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Sterna sandvicensis;13;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;MAZA;Sternula albifrons;208;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Calidris alba;88;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Charadrius alexandrinus;8;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Chroicocephalus ridibundus;2;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Haematopus ostralegus;16;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Larus audouinii;6;1 subadulto, 3 inmaduros con ocelos, 1 jæven;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Larus fuscus;174;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Larus michahellis;26;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Melanitta nigra;14;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Morus bassanus;43;38 jævenes, 4 inmaduros.;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Sterna sandvicensis;6;-;12:45;14:25;0;0;No evaluable;2
+CP19930921;21-sep-93;ZACA;Sternula albifrons;1;-;12:45;14:25;0;0;No evaluable;2
+CP19930927;27-sep-93;CAMA;Calidris alba;42;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;CAMA;Charadrius alexandrinus;1;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;CAMA;Larus fuscus;61;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;CAMA;Larus michahellis;3;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;CAMA;Morus bassanus;1;Inmaduro;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;CAMA;Sterna sandvicensis;2;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Ardea cinerea;1;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Calidris alba;34;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Chlidonias niger;15;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Chroicocephalus genei;2;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Chroicocephalus ridibundus;209;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Haematopus ostralegus;177;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Larus audouinii;3;2 subadultos;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Larus fuscus;598;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Larus michahellis;123;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Larus sp.;100;L.fuscus / L.michahellis;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Limosa lapponica;2;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Morus bassanus;5;Jævenes;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Recurvirostra avosetta;9;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Sterna hirundo;71;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;MAZA;Sterna sandvicensis;120;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Calidris alba;17;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Charadrius alexandrinus;2;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Chroicocephalus ridibundus;2;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Corvus corax;2;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Haematopus ostralegus;17;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Larus audouinii;1;Inmaduro;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Larus fuscus;59;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Larus michahellis;5;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Larus sp.;60;L.fuscus / L.michahellis;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Limosa lapponica;2;-;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Morus bassanus;1;Joven;10:05;10:35;0;1;E;0
+CP19930927;27-sep-93;ZACA;Sterna sandvicensis;1;-;10:05;10:35;0;1;E;0
+CP19931004;04-oct-93;CAMA;Calidris alba;42;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;CAMA;Charadrius alexandrinus;15;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;CAMA;Chroicocephalus ridibundus;2;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;CAMA;Corvus corax;2;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;CAMA;Haematopus ostralegus;3;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;CAMA;Larus fuscus;158;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;CAMA;Morus bassanus;3;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Calidris alba;3;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Charadrius alexandrinus;4;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Chlidonias niger;13;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Chroicocephalus genei;1;Inmaduro;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Chroicocephalus ridibundus;57;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Corvus corax;2;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Haematopus ostralegus;230;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Larus audouinii;3;2 inmaduros (1 con ocelos);12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Larus audouinii;114;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Larus fuscus;450;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Limosa lapponica;1;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Sterna hirundo;101;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;MAZA;Sterna sandvicensis;172;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;ZACA;Calidris alba;10;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;ZACA;Charadrius alexandrinus;3;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;ZACA;Haematopus ostralegus;17;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;ZACA;Larus fuscus;43;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;ZACA;Larus michahellis;8;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;ZACA;Limosa lapponica;4;-;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;ZACA;Melanitta nigra;7;6 machos y 1 hembra;12:55;14:10;0;1;S;2
+CP19931004;04-oct-93;ZACA;Morus bassanus;1;Joven;12:55;14:10;0;1;S;2
+CP19931013;13-oct-93;CAMA;Charadrius alexandrinus;32;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;CAMA;Chlidonias niger;50;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;CAMA;Haematopus ostralegus;10;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;CAMA;Hirundo rustica;20;En paso por la playa hacia el este;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;CAMA;Larus fuscus;750;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;CAMA;Larus michahellis;55;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;CAMA;Limosa lapponica;2;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;CAMA;Sterna sandvicensis;12;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Calidris alba;180;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Chlidonias niger;7;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Chroicocephalus ridibundus;9;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Corvus corax;2;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Haematopus ostralegus;200;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Hydroprogne caspia;2;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Larus audouinii;5;4 inmaduros, 1 joven;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Larus fuscus;1230;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Larus michahellis;160;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Limosa lapponica;53;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Numenius arquata;24;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Numenius phaeopus;1;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Pluvialis squatarola;30;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Sterna hirundo;1;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;MAZA;Sterna sandvicensis;30;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;ZACA;Calidris alba;15;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;ZACA;Charadrius alexandrinus;2;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;ZACA;Charadrius hiaticula;1;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;ZACA;Chroicocephalus ridibundus;5;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;ZACA;Haematopus ostralegus;7;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;ZACA;Larus fuscus;497;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;ZACA;Larus michahellis;37;-;10:05;12:00;4;3;S;3
+CP19931013;13-oct-93;ZACA;Morus bassanus;1;-;10:05;12:00;4;3;S;3
+CP19931018;18-oct-93;CAMA;Calidris alba;85;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;CAMA;Charadrius alexandrinus;17;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;CAMA;Haematopus ostralegus;3;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;CAMA;Larus audouinii;1;Adulto;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;CAMA;Larus fuscus;68;1 petroleada;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;CAMA;Larus michahellis;1;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;CAMA;Larus sp.;40;L.fuscus / L.michahellis;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;CAMA;Limosa lapponica;1;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;CAMA;Melanitta nigra;9;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;CAMA;Sterna sandvicensis;16;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Calidris alba;60;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Charadrius alexandrinus;1;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Chlidonias niger;30;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Chroicocephalus genei;5;Adultos;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Chroicocephalus ridibundus;21;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Haematopus ostralegus;195;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Hirundo rustica;1;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Larus audouinii;2;Adultos;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Larus fuscus;858;3 petroleadas;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Larus michahellis;98;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Sterna hirundo;11;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;MAZA;Sterna sandvicensis;2;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;ZACA;Anas penelope;4;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;ZACA;Calidris alba;75;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;ZACA;Charadrius alexandrinus;19;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;ZACA;Haematopus ostralegus;29;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;ZACA;Hirundo rustica;10;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;ZACA;Larus fuscus;156;1 petroleada;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;ZACA;Larus michahellis;5;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;ZACA;Melanitta nigra;80;-;10:35;11:20;0;0;N;0
+CP19931018;18-oct-93;ZACA;Sterna sandvicensis;7;-;10:35;11:20;0;0;N;0
+CP19931026;26-oct-93;CAMA;Calidris alba;132;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Charadrius alexandrinus;12;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Chroicocephalus ridibundus;30;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Corvus corax;2;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Falco peregrinus;1;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Haematopus ostralegus;10;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Larus audouinii;1;Adulto con cabeza rajada;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Larus fuscus;191;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Larus michahellis;5;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Larus sp.;70;L.fuscus / L.michahellis;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Limosa lapponica;1;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Melanitta nigra;3;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Morus bassanus;1;Joven;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;CAMA;Sterna sandvicensis;22;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Ardea cinerea;1;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Calidris alba;91;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Charadrius alexandrinus;4;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Chlidonias niger;1;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Chroicocephalus ridibundus;64;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Haematopus ostralegus;165;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Larus audouinii;2;1 adulto, 1 inmaduro;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Larus fuscus;432;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Larus michahellis;39;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Larus sp.;150;L.fuscus / L.michahellis;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Melanitta nigra;60;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;MAZA;Sterna sandvicensis;39;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Calidris alba;150;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Charadrius alexandrinus;13;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Chroicocephalus ridibundus;2;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Corvus corax;2;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Haematopus ostralegus;39;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Larus fuscus;288;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Larus michahellis;21;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Melanitta nigra;1;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Morus bassanus;1;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Pandion haliaetus;1;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Stercorarius parasiticus;1;-;10:05;9:30;4;2;NE;0
+CP19931026;26-oct-93;ZACA;Sterna sandvicensis;3;-;10:05;9:30;4;2;NE;0
+CP19931109;09-nov-93;CAMA;Calidris alba;100;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;CAMA;Charadrius alexandrinus;30;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;CAMA;Falco peregrinus;1;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;CAMA;Haematopus ostralegus;6;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;CAMA;Larus fuscus;175;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;CAMA;Larus michahellis;9;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;CAMA;Larus sp.;175;L.fuscus / L.michahellis, en vuelo sobre el mar;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;CAMA;Melanitta nigra;180;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;CAMA;Sterna sandvicensis;5;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;MAZA;Calidris alba;89;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;MAZA;Charadrius alexandrinus;1;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;MAZA;Chroicocephalus ridibundus;63;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;MAZA;Haematopus ostralegus;180;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;MAZA;Larus fuscus;176;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;MAZA;Larus michahellis;35;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;MAZA;Melanitta nigra;71;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;MAZA;Pluvialis apricaria;3;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;MAZA;Pluvialis squatarola;1;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;MAZA;Sterna sandvicensis;2;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Calidris alba;80;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Charadrius alexandrinus;1;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Corvus corax;2;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Haematopus ostralegus;17;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Larus audouinii;2;1 inmaduro, 1 adulto;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Larus fuscus;21;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Larus michahellis;2;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Larus sp.;110;L.fuscus / L.michahellis, en vuelo sobre el mar;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Melanitta nigra;31;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Motacilla alba;2;-;14:45;15:50;4;0;N;0
+CP19931109;09-nov-93;ZACA;Sterna sandvicensis;5;-;14:45;15:50;4;0;N;0
+CP19931115;15-nov-93;CAMA;Anthus pratensis;6;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Calidris alba;90;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Charadrius alexandrinus;3;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Haematopus ostralegus;15;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Larus audouinii;1;Inmaduro;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Larus fuscus;48;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Larus michahellis;2;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Larus sp.;130;L.fuscus / L.michahellis en vuelo;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Melanitta nigra;25;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Motacilla alba;2;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Phalacrocorax carbo;1;En vuelo hacia el E;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Stercorarius parasiticus;1;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;CAMA;Sterna sandvicensis;51;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Alca torda;3;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Ardea cinerea;1;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Calidris alba;40;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Charadrius alexandrinus;5;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Chroicocephalus genei;1;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Chroicocephalus ridibundus;172;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Haematopus ostralegus;160;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Larus audouinii;3;2 adultos, 1 inmaduro;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Larus fuscus;471;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Larus melanocephalus;1;Joven;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Larus michahellis;65;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Melanitta nigra;31;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Pluvialis squatarola;1;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Sterna hirundo;5;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Sterna paradisaea;1;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;MAZA;Sterna sandvicensis;37;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;ZACA;Calidris alba;50;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;ZACA;Charadrius alexandrinus;2;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;ZACA;Corvus corax;2;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;ZACA;Haematopus ostralegus;15;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;ZACA;Larus fuscus;274;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;ZACA;Larus michahellis;18;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;ZACA;Melanitta nigra;30;-;10:00;12:30;4;1;SE;0
+CP19931115;15-nov-93;ZACA;Sterna sandvicensis;17;-;10:00;12:30;4;1;SE;0
+CP19931122;22-nov-93;CAMA;Calidris alba;52;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;CAMA;Charadrius alexandrinus;6;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;CAMA;Corvus corax;2;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;CAMA;Haematopus ostralegus;10;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;CAMA;Larus audouinii;1;Inmaduro;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;CAMA;Larus fuscus;107;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;CAMA;Larus michahellis;2;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;CAMA;Larus sp.;85;L.fuscus / L.michahellis;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;CAMA;Melanitta nigra;32;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Calidris alba;6;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Charadrius alexandrinus;2;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Chroicocephalus ridibundus;136;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Falco peregrinus;1;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Haematopus ostralegus;138;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Larus audouinii;11;9 inmaduros, 2 adultos;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Larus fuscus;666;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Larus michahellis;52;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Melanitta nigra;119;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Phalacrocorax carbo;1;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;MAZA;Sterna sandvicensis;10;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;ZACA;Calidris alba;97;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;ZACA;Charadrius alexandrinus;8;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;ZACA;Haematopus ostralegus;15;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;ZACA;Larus fuscus;266;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;ZACA;Larus michahellis;17;-;13:55;15:35;4;1;N;0
+CP19931122;22-nov-93;ZACA;Melanitta nigra;177;-;13:55;15:35;4;1;N;0
+CP19931129;29-nov-93;CAMA;Calidris alba;106;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;CAMA;Charadrius alexandrinus;3;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;CAMA;Corvus corax;1;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;CAMA;Haematopus ostralegus;10;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;CAMA;Larus audouinii;1;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;CAMA;Larus fuscus;257;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;CAMA;Melanitta nigra;36;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;CAMA;Sterna sandvicensis;40;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;MAZA;Calidris alba;20;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;MAZA;Chroicocephalus ridibundus;72;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;MAZA;Falco peregrinus;1;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;MAZA;Haematopus ostralegus;107;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;MAZA;Larus audouinii;3;1 adulto, 2 inmaduros;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;MAZA;Larus fuscus;968;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;MAZA;Larus michahellis;51;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;MAZA;Melanitta nigra;55;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;MAZA;Pluvialis squatarola;1;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;MAZA;Sterna sandvicensis;4;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;ZACA;Calidris alba;26;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;ZACA;Charadrius alexandrinus;3;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;ZACA;Chroicocephalus ridibundus;1;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;ZACA;Corvus corax;3;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;ZACA;Haematopus ostralegus;51;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;ZACA;Larus fuscus;312;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;ZACA;Larus michahellis;10;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;ZACA;Melanitta nigra;9;-;10:25;11:20;6;0;No evaluable;2
+CP19931129;29-nov-93;ZACA;Sterna sandvicensis;45;-;10:25;11:20;6;0;No evaluable;2
+CP19931213;13-dic-93;CAMA;Calidris alba;74;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;CAMA;Charadrius alexandrinus;1;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;CAMA;Chroicocephalus ridibundus;1;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;CAMA;Haematopus ostralegus;26;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;CAMA;Larus fuscus;224;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;CAMA;Larus sp.;77;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;CAMA;Melanitta nigra;2;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;CAMA;Motacilla alba;2;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;CAMA;Sterna sandvicensis;6;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Anas sp.;1;En el mar;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Calidris alba;17;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Charadrius alexandrinus;5;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Chroicocephalus ridibundus;35;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Corvus corax;3;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Falco peregrinus;1;Macho;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Haematopus ostralegus;172;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Hydroprogne caspia;1;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Larus fuscus;841;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Larus michahellis;9;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Larus sp.;216;L. fuscus / L. michahellis;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Melanitta nigra;66;Sælo 2 machos;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Pluvialis squatarola;3;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;MAZA;Sterna sandvicensis;29;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;ZACA;Alca torda;1;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;ZACA;Calidris alba;46;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;ZACA;Charadrius alexandrinus;6;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;ZACA;Corvus corax;3;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;ZACA;Haematopus ostralegus;40;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;ZACA;Larus fuscus;294;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;ZACA;Larus michahellis;2;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;ZACA;Larus sp.;116;-;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;ZACA;Milvus migrans;15;1 macho;10:35;13:30;6;1;S;-
+CP19931213;13-dic-93;ZACA;Sterna sandvicensis;40;-;10:35;13:30;6;1;S;-
+CP19931217;17-dic-93;CAMA;Alca torda;2;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;CAMA;Calidris alba;73;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;CAMA;Corvus corax;2;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;CAMA;Haematopus ostralegus;25;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;CAMA;Larus fuscus;118;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;CAMA;Larus michahellis;1;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;CAMA;Melanitta nigra;70;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;CAMA;Motacilla alba;1;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;CAMA;Sterna sandvicensis;4;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Calidris alba;29;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Charadrius alexandrinus;3;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Chroicocephalus genei;1;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Chroicocephalus ridibundus;141;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Corvus corax;2;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Falco peregrinus;1;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Haematopus ostralegus;159;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Larus audouinii;1;Inmaduro;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Larus fuscus;665;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Larus michahellis;36;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Melanitta nigra;5;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Phalacrocorax carbo;3;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Pluvialis squatarola;2;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;MAZA;Sterna sandvicensis;9;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Alca torda;5;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Calidris alba;73;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Chroicocephalus ridibundus;1;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Haematopus ostralegus;25;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Larus audouinii;2;Inmaduros;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Larus fuscus;104;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Larus michahellis;3;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Melanitta nigra;70;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Morus bassanus;30;N∑mero aproximado, en alta mar, la mitad son adultos;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Stercorarius parasiticus;2;1 claro y 1 oscuro;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Stercorarius skua;1;-;10:05;12:55;0;1;NE;0
+CP19931217;17-dic-93;ZACA;Sterna sandvicensis;16;-;10:05;12:55;0;1;NE;0
+CP19931221;21-dic-93;CAMA;Calidris alba;60;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;CAMA;Charadrius alexandrinus;3;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;CAMA;Haematopus ostralegus;46;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;CAMA;Larus fuscus;204;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;CAMA;Larus michahellis;8;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;CAMA;Melanitta nigra;1;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;CAMA;Morus bassanus;7;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Alca torda;7;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Calidris alba;85;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Chroicocephalus ridibundus;213;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Corvus corax;2;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Haematopus ostralegus;180;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Larus argentatus;1;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Larus audouinii;3;2 inmaduros, 1 adulto;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Larus fuscus;1028;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Larus michahellis;99;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Larus sp.;150;L.fuscus / L.michahellis;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Melanitta nigra;91;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Morus bassanus;13;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Phalacrocorax carbo;6;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Pluvialis squatarola;1;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Sterna hirundo;7;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;MAZA;Sterna sandvicensis;61;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Alca torda;20;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Anas penelope;5;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Calidris alba;68;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Charadrius alexandrinus;2;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Corvus corax;1;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Haematopus ostralegus;2;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Larus audouinii;1;Adulto;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Larus fuscus;122;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Larus michahellis;10;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Larus sp.;25;L.fuscus / L.michahellis;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Melanitta nigra;195;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Morus bassanus;5;-;13:00;15:30;0;1;E;0
+CP19931221;21-dic-93;ZACA;Sterna sandvicensis;1;-;13:00;15:30;0;1;E;0
+CP19931227;27-dic-93;CAMA;Calidris alba;31;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;CAMA;Haematopus ostralegus;14;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;CAMA;Larus fuscus;118;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;CAMA;Larus michahellis;1;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;CAMA;Melanitta nigra;12;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;CAMA;Sterna sandvicensis;10;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;MAZA;Calidris alba;29;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;MAZA;Chroicocephalus ridibundus;46;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;MAZA;Haematopus ostralegus;157;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;MAZA;Larus audouinii;1;Adulto;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;MAZA;Larus fuscus;472;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;MAZA;Larus michahellis;33;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;MAZA;Larus sp.;30;L.fuscus / L.michahellis, en vuelo;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;MAZA;Melanitta nigra;10;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;MAZA;Morus bassanus;2;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;MAZA;Sterna sandvicensis;10;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;ZACA;Calidris alba;15;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;ZACA;Corvus corax;2;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;ZACA;Falco peregrinus;1;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;ZACA;Haematopus ostralegus;15;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;ZACA;Larus fuscus;96;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;ZACA;Larus michahellis;3;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;ZACA;Melanitta nigra;50;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;ZACA;Morus bassanus;30;-;11:00;11:45;4;2;NW;2
+CP19931227;27-dic-93;ZACA;Sterna sandvicensis;15;-;11:00;11:45;4;2;NW;2
