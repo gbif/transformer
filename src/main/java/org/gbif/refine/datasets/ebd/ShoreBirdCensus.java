@@ -43,7 +43,7 @@ public class ShoreBirdCensus {
     // directory where files should be written to
     File output = org.gbif.utils.file.FileUtils.createTempDir();
     processShoreBirdCensus(output);
-    LOG.info("Processing complete! event.txt and occurrence.txt written to: " + output.getAbsolutePath());
+    LOG.info("Processing ShoreBirdCensus_1993.csv complete! event.txt and occurrence.txt written to: " + output.getAbsolutePath());
   }
 
   /**
@@ -68,16 +68,10 @@ public class ShoreBirdCensus {
     String[] header = getHeader();
 
     // sampling events file
-    File outEvents = new File(output, "events.tab");
-    Writer writerEvents = org.gbif.utils.file.FileUtils.startNewUtf8File(outEvents);
-    // write header
-    writerEvents.write(FileUtils.tabRow(header));
+    Writer writerEvents = FileUtils.startEventsFile(output, header);
 
     // observations file
-    File outOccs = new File(output, "occurrences.tab");
-    Writer writerOccs = org.gbif.utils.file.FileUtils.startNewUtf8File(outOccs);
-    // write header
-    writerOccs.write(FileUtils.tabRow(header));
+    Writer writerOccs = FileUtils.startOccurrencesFile(output, header);
 
     // to capture all unique eventIDs
     Set<String> events = Sets.newHashSet();
