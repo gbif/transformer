@@ -8,6 +8,7 @@ import org.gbif.io.CSVReaderFactory;
 import org.gbif.refine.client.WebserviceClientModule;
 import org.gbif.refine.utils.Constants;
 import org.gbif.refine.utils.FileUtils;
+import org.gbif.refine.utils.TermUtils;
 import org.gbif.utils.file.ClosableReportingIterator;
 
 import java.io.File;
@@ -197,7 +198,7 @@ public class ShoreBirdCensus {
         }
 
         // occurrenceStatus (present vs absent)
-        modifiedRecord[36] = (Integer.valueOf(modifiedRecord[4]) > 0) ? Constants.PRESENT : Constants.ABSENT;
+        modifiedRecord[36] = TermUtils.getOccurrenceStatus(Integer.valueOf(modifiedRecord[4])).toString().toLowerCase();
 
         // always output line to new occurrences file
         String row = FileUtils.tabRow(modifiedRecord);

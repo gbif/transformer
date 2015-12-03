@@ -17,6 +17,9 @@ public class FileUtils {
   private static String eventsFileName = "events.tab";
   private static String occurrencesFileName = "occurrences.tab";
 
+  public FileUtils() {
+  }
+
   /**
    * Generate a row/string of values tab delimited. Line breaking characters encountered in
    * a value are replaced with an empty character.
