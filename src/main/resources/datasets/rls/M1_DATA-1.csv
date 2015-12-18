@@ -1,0 +1,2 @@
+FID,Key,SurveyID,Country,Ecoregion,Realm,SiteCode,Site,SiteLat,SiteLong,SurveyDate,Depth,Phylum,Class,Family,Taxon,Block,Total,Diver,geom
+M1_DATA.1,1,912343305,Australia,Coral Sea,Central Indo-Pacific,CS129,Flinders Ribbon Reef South Cay E bommie,-17.703,148.4618,2013-06-30T00:00:00,11,Chordata,Actinopterygii,Scaridae,Scarus longipinnis,2,2,RJE,POINT (148.46176 -17.70304)
