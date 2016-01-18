@@ -53,7 +53,7 @@ public class RooftopBugs {
    */
   public static Map<String, NameUsage> loadTaxaList() throws IOException {
     // load the original source file to process
-    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/TaxaList.csv");
+    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/TaxaList-v2.csv");
 
     // create an iterator on the file
     CSVReader reader = CSVReaderFactory.build(fis, "Latin1", ";", '"', 1);
@@ -103,14 +103,14 @@ public class RooftopBugs {
         }
 
         // column 2: Genus when rank=species
-        String part1 = Strings.nullToEmpty(record[2]);
+        String part1 = Strings.nullToEmpty(record[2]).trim();
         if (!Strings.isNullOrEmpty(part1)) {
           nameUsage.setGenus(part1);
           canonicalName = canonicalName + part1;
         }
 
         // column 3: species (e.g. SpecificEpithet when rank=species)
-        String part2 = Strings.nullToEmpty(record[3]);
+        String part2 = Strings.nullToEmpty(record[3]).trim();
         if (!Strings.isNullOrEmpty(part2)) {
           if (nameUsage.getRank() != null) {
             nameUsage.setSpecies(part2);
@@ -164,7 +164,7 @@ public class RooftopBugs {
    */
   public static void processLepidoptera(File output) throws IOException {
     // load the original source file to process
-    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/Lepidoptera_1992-2009.csv");
+    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/Lepidoptera_1992-2009-v2.csv");
 
     // create an iterator on the file
     CSVReader reader = CSVReaderFactory.build(fis, "UTF-8", ";", '"', 1);
@@ -180,6 +180,9 @@ public class RooftopBugs {
 
     // to capture all unique eventIDs
     Set<String> events = Sets.newHashSet();
+
+    // to capture bad names
+    Set<String> namesNotFound = Sets.newTreeSet();
 
     ClosableReportingIterator<String[]> iter = null;
     int line = 0;
@@ -229,21 +232,22 @@ public class RooftopBugs {
         String name = modifiedRecord[4].trim();
         // only use canonical name in lookup
         String[] parts = name.split(" ");
-        if (parts.length >= 3) {
-          String canonical = parts[0] + " " + parts[1];
+        if (parts.length >= 2) {
+          String canonical = parts[0].trim() + " " + parts[1].trim();
           NameUsage found = names.get(canonical);
           if (found != null) {
-            LOG.info("Found name in taxa list: " + found);
             modifiedRecord[43] = found.getGenus();
             modifiedRecord[44] = found.getCanonicalName() + " " + found.getAuthorship();
             modifiedRecord[45] = found.getAuthorship();
             modifiedRecord[46] = (found.getRank() == null) ? null : found.getRank().toString().toLowerCase();
             modifiedRecord[47] = found.getTaxonID();
           } else {
-            LOG.error("Failed to find name in taxa list: " + name);
+            if (!namesNotFound.contains(name)) {
+              namesNotFound.add(name);
+            }
           }
         } else {
-          LOG.error("Name has too few parts: " + name);
+          LOG.error("*****Bad species name encountered: " + name);
         }
 
         // always output line to new occurrences file
@@ -259,6 +263,12 @@ public class RooftopBugs {
       }
       LOG.info("Iterated over " + line + " rows.");
       LOG.info("Found " + events.size() + " unique events.");
+
+      LOG.warn("***** " + namesNotFound.size() + " names not found in taxa list: ");
+      for (String notFound : namesNotFound) {
+        LOG.warn(notFound);
+      }
+
     } catch (Exception e) {
       // some error validating this file, report
       LOG.error("Exception caught while iterating over file", e);
