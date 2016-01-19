@@ -5,6 +5,7 @@ import org.gbif.api.model.checklistbank.NameUsage;
 import org.gbif.api.vocabulary.Rank;
 import org.gbif.io.CSVReader;
 import org.gbif.io.CSVReaderFactory;
+import org.gbif.refine.utils.Constants;
 import org.gbif.refine.utils.FileUtils;
 import org.gbif.refine.utils.TermUtils;
 import org.gbif.utils.file.ClosableReportingIterator;
@@ -13,7 +14,11 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Writer;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import javax.validation.constraints.NotNull;
@@ -203,17 +208,17 @@ public class RooftopBugs {
           "The material sample was collected, and either preserved or destructively processed."; // eventRemarks
         modifiedRecord[17] = "Denmark"; // country
         modifiedRecord[18] = "DK"; // countryCode
-        modifiedRecord[19] = "Rooftop of Natural History Museum of Denmark"; // locality
-        modifiedRecord[20] = "55·702512"; // decimalLatitude
-        modifiedRecord[21] = "12·558956"; // decimalLongitude
+        modifiedRecord[19] = "Light trap on rooftop of Zoological Museum, Natural History Museum of Denmark (ZMUC)"; // locality
+        modifiedRecord[20] = "55.702512"; // decimalLatitude
+        modifiedRecord[21] = "12.558956"; // decimalLongitude
         modifiedRecord[22] = "WGS84"; // geodeticDatum
         modifiedRecord[23] = "modified Robinson light trap"; // samplingProtocol
         modifiedRecord[25] = "day"; // sampleSizeUnit
         modifiedRecord[27] = "http://creativecommons.org/licenses/by/4.0/legalcode"; // license
         modifiedRecord[28] = "Event"; // type
-        modifiedRecord[29] = "Natural History Museum of Denmark"; // rightsHolder
-        modifiedRecord[30] = "NHMD"; // institutionCode
-        modifiedRecord[31] = "NHMD"; // ownerInstitutionCode
+        modifiedRecord[29] = "Zoological Museum, Natural History Museum of Denmark (ZMUC)"; // rightsHolder
+        modifiedRecord[30] = "ZMUC"; // institutionCode
+        modifiedRecord[31] = "ZMUC"; // ownerInstitutionCode
         modifiedRecord[33] = "MaterialSample"; // basisOfRecord
         modifiedRecord[34] = "Ole Karsholt"; // recordedBy
         modifiedRecord[35] = "Ole Karsholt"; // identifiedBy
@@ -227,6 +232,33 @@ public class RooftopBugs {
 
         // occurrenceStatus (present vs absent)
         modifiedRecord[38] = TermUtils.getOccurrenceStatus(Integer.valueOf(modifiedRecord[8])).toString().toLowerCase();
+
+        // convert start date (e.g. 21/08/94) into ISO format
+        String start = modifiedRecord[2];
+        DateFormat df = new SimpleDateFormat("dd/MM/yy", new Locale("dk", "DK"));
+        Date startDate = df.parse(start);
+        modifiedRecord[2] = Constants.ISO_DF.format(startDate);
+
+        // convert end date (e.g. 21/08/94) into ISO format
+        String end = modifiedRecord[3];
+        Date endDate = df.parse(end);
+        modifiedRecord[3] = Constants.ISO_DF.format(endDate);
+
+        // combine start and end date into date range for eventDate
+        modifiedRecord[15] = modifiedRecord[2] + "/" + modifiedRecord[3];
+
+        // calculate samplingEffort in number of trap days
+        long diff = endDate.getTime() - startDate.getTime();
+        float days = diff / (24 * 60 * 60 * 1000);
+        modifiedRecord[26] = String.valueOf(Math.round(days)) + " trap day(s)";
+
+        // store sampleSize even though it's the same as samplingEffort
+        modifiedRecord[24] = String.valueOf(Math.round(days));
+
+        // construct unique eventID for this sampling period
+        // Format: "urn:[institutionID]:[startDate/endDate]"
+        // Example: "urn:zmuc:1994-08-12/1994-08-21"
+        modifiedRecord[14] = "urn:zmuc:" + modifiedRecord[15];
 
         // find name in taxa list
         String name = modifiedRecord[4].trim();
@@ -249,6 +281,11 @@ public class RooftopBugs {
         } else {
           LOG.error("*****Bad species name encountered: " + name);
         }
+
+        // construct unique occurrenceID for this abundance record:
+        // Format: "urn:[institutionCode]:[startDate/endDate]:[taxonID]"
+        // Example: "urn:zmuc:1994-08-12/1994-08-21:1301"
+        modifiedRecord[32] = modifiedRecord[14] + ":" + modifiedRecord[47];
 
         // always output line to new occurrences file
         String row = FileUtils.tabRow(modifiedRecord);
@@ -297,11 +334,10 @@ public class RooftopBugs {
     // header 1: group, e.g. ACROLEPIIDAE
     header[1] = "group";
     // header 2: date1, e.g. 12/08/94
-    // TODO: convert to ISO
+    // converted to ISO format 1994-08-12
     header[2] = "date1";
     // header 3: date2, e.g. 21/08/94
-    // TODO: combine into eventDate range
-    // TODO: calculate samplingEffort
+    // converted to ISO format 1994-08-21
     header[3] = "date2";
     // header 4: name, e.g. Acrolepiopsis assectella Zell.:
     header[4] = "name";
@@ -330,7 +366,6 @@ public class RooftopBugs {
     // ***new augmented columns of information
 
     // header 2: eventID
-    // TODO: construct
     header[14] = "eventID";
     // header 10: eventDate, e.g. 1994-08-12/1994-08-21
     header[15] = "eventDate";
@@ -362,12 +397,11 @@ public class RooftopBugs {
     header[28] = "type";
     // Natural History Museum of Denmark
     header[29] = "rightsHolder";
-    // NHMD
+    // ZMUC
     header[30] = "institutionCode";
-    // NHMD
+    // ZMUC
     header[31] = "ownerInstitutionCode";
     // header 14: occurrenceID
-    // TODO: construct
     header[32] = "occurrenceID";
     // MaterialSample
     header[33] = "basisOfRecord";
