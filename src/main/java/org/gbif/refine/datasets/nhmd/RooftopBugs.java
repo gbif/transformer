@@ -61,7 +61,7 @@ public class RooftopBugs {
     InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/TaxaList-v2.csv");
 
     // create an iterator on the file
-    CSVReader reader = CSVReaderFactory.build(fis, "Latin1", ";", '"', 1);
+    CSVReader reader = CSVReaderFactory.build(fis, "UTF-8", ";", '"', 1);
 
     // to capture all NameUsages into a map with their canonical name as key
     Map<String, NameUsage> names = Maps.newHashMap();
@@ -169,7 +169,7 @@ public class RooftopBugs {
    */
   public static void processLepidoptera(File output) throws IOException {
     // load the original source file to process
-    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/Lepidoptera_1992-2009-v2.csv");
+    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/Lepidoptera_1992-2009-v3.csv");
 
     // create an iterator on the file
     CSVReader reader = CSVReaderFactory.build(fis, "UTF-8", ";", '"', 1);
@@ -258,14 +258,21 @@ public class RooftopBugs {
         // construct unique eventID for this sampling period
         // Format: "urn:[institutionID]:[startDate/endDate]"
         // Example: "urn:zmuc:1994-08-12/1994-08-21"
-        modifiedRecord[14] = "urn:zmuc:" + modifiedRecord[15];
+        modifiedRecord[49] = "urn:zmuc:" + modifiedRecord[15];
 
         // find name in taxa list
         String name = modifiedRecord[4].trim();
         // only use canonical name in lookup
         String[] parts = name.split(" ");
         if (parts.length >= 2) {
-          String canonical = parts[0].trim() + " " + parts[1].trim();
+          String canonical = parts[0].trim();
+
+          // exclude "sp." from canonical name
+          String specificEpithet = parts[1].trim();
+          if (!specificEpithet.equals("sp.")) {
+            canonical+= " " + specificEpithet;
+          }
+
           NameUsage found = names.get(canonical);
           if (found != null) {
             modifiedRecord[43] = found.getGenus();
@@ -273,6 +280,13 @@ public class RooftopBugs {
             modifiedRecord[45] = found.getAuthorship();
             modifiedRecord[46] = (found.getRank() == null) ? null : found.getRank().toString().toLowerCase();
             modifiedRecord[47] = found.getTaxonID();
+
+            // names that changed store previous identification in "previousIdentifications"
+            if (canonical.equals("Bena bicolorana")) {
+              modifiedRecord[50] = "Bena prasinana L.";
+            } else if (canonical.equals("Pseudoips prasinana")) {
+              modifiedRecord[50] = "Pseudoips fagana F.";
+            }
           } else {
             if (!namesNotFound.contains(name)) {
               namesNotFound.add(name);
@@ -285,7 +299,7 @@ public class RooftopBugs {
         // construct unique occurrenceID for this abundance record:
         // Format: "urn:[institutionCode]:[startDate/endDate]:[taxonID]"
         // Example: "urn:zmuc:1994-08-12/1994-08-21:1301"
-        modifiedRecord[32] = modifiedRecord[14] + ":" + modifiedRecord[47];
+        modifiedRecord[32] = modifiedRecord[49] + ":" + modifiedRecord[47];
 
         // always output line to new occurrences file
         String row = FileUtils.tabRow(modifiedRecord);
@@ -324,7 +338,7 @@ public class RooftopBugs {
    */
   @NotNull
   private static String[] getHeader() {
-    String[] header = new String[49];
+    String[] header = new String[51];
 
     // ***original columns
 
@@ -362,12 +376,12 @@ public class RooftopBugs {
     header[12] = "day2";
     // header 13: no_one, e.g. 1
     header[13] = "no_one";
+    // header 14: identificationRemarks, e.g. "Either species a or b"
+    header[14] = "identificationRemarks";
 
     // ***new augmented columns of information
 
-    // header 2: eventID
-    header[14] = "eventID";
-    // header 10: eventDate, e.g. 1994-08-12/1994-08-21
+    // eventDate range, e.g. 1994-08-12/1994-08-21
     header[15] = "eventDate";
     // The material sample was collected, and either preserved or destructively processed.
     header[16] = "eventRemarks";
@@ -401,7 +415,7 @@ public class RooftopBugs {
     header[30] = "institutionCode";
     // ZMUC
     header[31] = "ownerInstitutionCode";
-    // header 14: occurrenceID
+    // unique occurrenceID
     header[32] = "occurrenceID";
     // MaterialSample
     header[33] = "basisOfRecord";
@@ -426,6 +440,12 @@ public class RooftopBugs {
     header[46] = "taxonRank";
     header[47] = "taxonID";
     header[48] = "taxonomicStatus";
+
+    // unique eventID
+    header[49] = "eventID";
+    // to capture name change
+    header[50] = "previousIdentifications";
+
     // TODO: minimum/maximumElevationInMeters
 
     return header;
