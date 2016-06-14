@@ -40,7 +40,7 @@ public class FileUtils {
   }
 
   /**
-   * Create a new events file in the output directory and write its header line.
+   * Create a new events.tab file in the output directory and write its header line.
    *
    * @param output directory
    * @param header column list equal to header line
@@ -57,7 +57,25 @@ public class FileUtils {
   }
 
   /**
-   * Create a new occurrences file in the output directory and write its header line.
+   * Create a new events file with specified name in the output directory and write its header line.
+   *
+   * @param output directory
+   * @param header column list equal to header line
+   * @param fileName name of events file
+   *
+   * @return writer on file
+   *
+   * @throws IOException if writer failed to be created
+   */
+  public static Writer startEventsFile(File output, String[] header, String fileName) throws IOException {
+    File outEvents = new File(output, fileName);
+    Writer writerEvents = org.gbif.utils.file.FileUtils.startNewUtf8File(outEvents);
+    writerEvents.write(FileUtils.tabRow(header));
+    return writerEvents;
+  }
+
+  /**
+   * Create a new occurrences.tab file in the output directory and write its header line.
    *
    * @param output directory
    * @param header column list equal to header line
@@ -68,6 +86,24 @@ public class FileUtils {
    */
   public static Writer startOccurrencesFile(File output, String[] header) throws IOException {
     File outEvents = new File(output, occurrencesFileName);
+    Writer writerEvents = org.gbif.utils.file.FileUtils.startNewUtf8File(outEvents);
+    writerEvents.write(FileUtils.tabRow(header));
+    return writerEvents;
+  }
+
+  /**
+   * Create a new occurrences file with specified name in the output directory and write its header line.
+   *
+   * @param output directory
+   * @param header column list equal to header line
+   * @param fileName name of events file
+   *
+   * @return writer on file
+   *
+   * @throws IOException if writer failed to be created
+   */
+  public static Writer startOccurrencesFile(File output, String[] header, String fileName) throws IOException {
+    File outEvents = new File(output, fileName);
     Writer writerEvents = org.gbif.utils.file.FileUtils.startNewUtf8File(outEvents);
     writerEvents.write(FileUtils.tabRow(header));
     return writerEvents;

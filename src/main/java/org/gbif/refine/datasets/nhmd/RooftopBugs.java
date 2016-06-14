@@ -2,9 +2,13 @@ package org.gbif.refine.datasets.nhmd;
 
 
 import org.gbif.api.model.checklistbank.NameUsage;
+import org.gbif.api.model.checklistbank.NameUsageMatch;
+import org.gbif.api.model.common.LinneanClassification;
+import org.gbif.api.service.checklistbank.NameUsageMatchingService;
 import org.gbif.api.vocabulary.Rank;
 import org.gbif.io.CSVReader;
 import org.gbif.io.CSVReaderFactory;
+import org.gbif.refine.client.WebserviceClientModule;
 import org.gbif.refine.utils.Constants;
 import org.gbif.refine.utils.FileUtils;
 import org.gbif.refine.utils.TermUtils;
@@ -38,6 +42,14 @@ public class RooftopBugs {
   private static final Logger LOG = LoggerFactory.getLogger(RooftopBugs.class);
   private static Map<String, NameUsage> names;
 
+  private static final NameUsageMatchingService MATCHING_SERVICE =
+    WebserviceClientModule.webserviceClientReadOnly().getInstance(NameUsageMatchingService.class);
+
+  private static String lepidopteraEventsFileName = "events-lepidoptera.tab";
+  private static String lepidopteraOccurrencesFileName = "occurrences-lepidoptera.tab";
+  private static String coleopteraEventsFileName = "events-coleoptera.tab";
+  private static String coleopteraOccurrencesFileName = "occurrences-coleoptera.tab";
+
   public static void main(String[] args) throws IOException {
     // load list of all taxa
     names = loadTaxaList();
@@ -48,8 +60,13 @@ public class RooftopBugs {
 
     // process all Lepidoptera records
     processLepidoptera(output);
-    LOG.info("Processing Lepidoptera_1992-2009.csv complete! event.txt and occurrence.txt written to: " + output
-      .getAbsolutePath());
+    LOG.info("Processing Lepidoptera_1992-2009.csv complete! " + lepidopteraEventsFileName + " and "
+             + lepidopteraOccurrencesFileName + " written to: " + output.getAbsolutePath());
+
+    // process all Coleoptera record
+    processColeoptera(output);
+    LOG.info("Processing Lepidoptera_1992-2009.csv complete! " + coleopteraEventsFileName + " and "
+             + coleopteraOccurrencesFileName + " written to: " + output.getAbsolutePath());
   }
 
   /**
@@ -175,13 +192,13 @@ public class RooftopBugs {
     CSVReader reader = CSVReaderFactory.build(fis, "UTF-8", ";", '"', 1);
 
     // get header row for the new event and occurrence files that this method will output
-    String[] header = getHeader();
+    String[] header = getLepidopteraHeader();
 
     // sampling events file
-    Writer writerEvents = FileUtils.startEventsFile(output, header);
+    Writer writerEvents = FileUtils.startEventsFile(output, header, lepidopteraEventsFileName);
 
     // observations file
-    Writer writerOccs = FileUtils.startOccurrencesFile(output, header);
+    Writer writerOccs = FileUtils.startOccurrencesFile(output, header, lepidopteraOccurrencesFileName);
 
     // to capture all unique eventIDs
     Set<String> events = Sets.newHashSet();
@@ -334,10 +351,188 @@ public class RooftopBugs {
   }
 
   /**
-   * @return array of column names in output files (event.txt, occurrence.txt)
+   * Iterates over original source file and does the following:
+   * i) cleans it (e.g. maps column header names to DwC term names, converts dates to ISO format, etc)
+   * ii) augments it (e.g. adds new columns for sample size, higher taxonomy, etc)
+   * iii) transforms it into star format (core file events.txt is list of unique sampling events, and extension file
+   * occurrence.txt is a list of all observations derived from all sampling events)
+   *
+   * @param output directory to write files to
+   *
+   * @throws IOException if method fails
+   */
+  public static void processColeoptera(File output) throws IOException {
+    // load the original source file to process
+    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/Coleoptera_1992-2009-1.csv");
+
+    // create an iterator on the file
+    CSVReader reader = CSVReaderFactory.build(fis, "UTF-8", ",", '"', 1);
+
+    // get header row for the new event and occurrence files that this method will output
+    String[] header = getColeopteraHeader();
+
+    // sampling events file
+    Writer writerEvents = FileUtils.startEventsFile(output, header, coleopteraEventsFileName);
+
+    // observations file
+    Writer writerOccs = FileUtils.startOccurrencesFile(output, header, coleopteraOccurrencesFileName);
+
+    // to capture all unique eventIDs
+    Set<String> events = Sets.newHashSet();
+
+    // to capture bad names
+    Set<String> namesNotFound = Sets.newTreeSet();
+
+    ClosableReportingIterator<String[]> iter = null;
+    int line = 0;
+    try {
+      iter = reader.iterator();
+      while (iter.hasNext()) {
+        line++;
+        String[] record = iter.next();
+        if (record == null || record.length == 0) {
+          continue;
+        }
+
+        // create new augmented record
+        String[] modifiedRecord = Arrays.copyOf(record, header.length);
+
+        // add static values
+        modifiedRecord[16] =
+          "The material sample was collected, and either preserved or destructively processed."; // eventRemarks
+        modifiedRecord[17] = "Denmark"; // country
+        modifiedRecord[18] = "DK"; // countryCode
+        modifiedRecord[19] = "Light trap on rooftop of Zoological Museum, Natural History Museum of Denmark (ZMUC)"; // locality
+        modifiedRecord[20] = "55.702512"; // decimalLatitude
+        modifiedRecord[21] = "12.558956"; // decimalLongitude
+        modifiedRecord[22] = "WGS84"; // geodeticDatum
+        modifiedRecord[23] = "modified Robinson light trap"; // samplingProtocol
+        modifiedRecord[25] = "day"; // sampleSizeUnit
+        modifiedRecord[27] = "http://creativecommons.org/licenses/by/4.0/legalcode"; // license
+        modifiedRecord[28] = "Event"; // type
+        modifiedRecord[29] = "Zoological Museum, Natural History Museum of Denmark (ZMUC)"; // rightsHolder
+        modifiedRecord[30] = "ZMUC"; // institutionCode
+        modifiedRecord[31] = "ZMUC"; // ownerInstitutionCode
+        modifiedRecord[33] = "MaterialSample"; // basisOfRecord
+        modifiedRecord[34] = "Jan Pedersen"; // recordedBy
+        modifiedRecord[35] = "Jan Pedersen"; // identifiedBy
+        modifiedRecord[37] = "individuals"; // organismQuantityType
+        modifiedRecord[39] = "Animalia"; // kingdom
+        modifiedRecord[40] = "Arthropoda"; // phylum
+        modifiedRecord[41] = "Insecta"; // class
+
+        // store organismQuantity even though it's the same as individualCount
+        modifiedRecord[36] = modifiedRecord[6]; // value copied from individualCount
+
+        // occurrenceStatus (present vs absent)
+        modifiedRecord[38] = TermUtils.getOccurrenceStatus(Integer.valueOf(modifiedRecord[6])).toString().toLowerCase();
+
+        // convert start date (e.g. 5/17/93) into ISO format
+        String start = modifiedRecord[4];
+        DateFormat df = new SimpleDateFormat("MM/dd/yy", new Locale("dk", "DK"));
+        Date startDate = df.parse(start);
+        modifiedRecord[4] = Constants.ISO_DF.format(startDate);
+
+        // convert end date (e.g. 5/23/93) into ISO format
+        String end = modifiedRecord[5];
+        Date endDate = df.parse(end);
+        modifiedRecord[5] = Constants.ISO_DF.format(endDate);
+
+        // combine start and end date into date range for eventDate
+        modifiedRecord[15] = modifiedRecord[4] + "/" + modifiedRecord[5];
+
+        // calculate samplingEffort in number of trap days
+        long diff = endDate.getTime() - startDate.getTime();
+        float days = diff / (24 * 60 * 60 * 1000);
+        modifiedRecord[26] = String.valueOf(Math.round(days)) + " trap day(s)";
+
+        // store sampleSize even though it's the same as samplingEffort
+        modifiedRecord[24] = String.valueOf(Math.round(days));
+
+        // construct unique eventID for this sampling period
+        // Format: "urn:[institutionID]:[startDate/endDate]"
+        // Example: "urn:zmuc:1994-08-12/1994-08-21"
+        modifiedRecord[49] = "urn:zmuc:" + modifiedRecord[15];
+
+        // verify taxonomy
+        String name = modifiedRecord[2].trim();
+
+        // for more accurate match, we take higher taxonomy into consideration
+        LinneanClassification cl = new NameUsage();
+        cl.setKingdom(modifiedRecord[39]); // static
+        cl.setPhylum(modifiedRecord[40]); // static
+        cl.setClazz(modifiedRecord[41]); // static
+        cl.setOrder(modifiedRecord[0]);
+        cl.setSpecies(name);
+
+        // lowest rank specified
+        Rank rank = TermUtils.lowestRank(cl);
+        if (rank != null) {
+          modifiedRecord[46] = rank.toString();
+        }
+
+        // verify name, and add higher taxonomy
+        NameUsageMatch match = MATCHING_SERVICE.match(name, rank, cl, false, false);
+        if (match.getMatchType().equals(NameUsageMatch.MatchType.EXACT)) {
+          modifiedRecord[48] = match.getStatus().toString();
+          modifiedRecord[39] = match.getKingdom();
+          modifiedRecord[40] = match.getPhylum();
+          modifiedRecord[41] = match.getClazz();
+          modifiedRecord[42] = match.getFamily();
+          modifiedRecord[43] = match.getGenus();
+          modifiedRecord[44] = match.getScientificName();
+          modifiedRecord[47] = match.getUsageKey().toString();
+        } else {
+          if (!namesNotFound.contains(name)) {
+            LOG.error(
+              match.getMatchType().toString() + " match for: " + name + " (with rank " + rank + ") to: " + match
+                .getScientificName() + " (with rank " + match.getRank() + ")");
+            namesNotFound.add(name);
+          }
+        }
+
+        // construct unique occurrenceID for this abundance record:
+        // Format: "urn:[institutionCode]:[startDate/endDate]:[taxonID]"
+        // Example: "urn:zmuc:1994-08-12/1994-08-21:1301"
+        modifiedRecord[32] = modifiedRecord[49] + ":" + modifiedRecord[47];
+
+        // always output line to new occurrences file
+        String row = FileUtils.tabRow(modifiedRecord);
+        writerOccs.write(row);
+
+        // only output line to events file if event hasn't been included yet
+        String eventID = modifiedRecord[2];
+        if (!events.contains(eventID)) {
+          writerEvents.write(row);
+          events.add(eventID);
+        }
+      }
+      LOG.info("Iterated over " + line + " rows.");
+      LOG.info("Found " + events.size() + " unique events.");
+
+      LOG.warn("***** " + namesNotFound.size() + " names not found in taxa list: ");
+      for (String notFound : namesNotFound) {
+        LOG.warn(notFound);
+      }
+
+    } catch (Exception e) {
+      // some error validating this file, report
+      LOG.error("Exception caught while iterating over file", e);
+    } finally {
+      if (iter != null) {
+        iter.close();
+      }
+      reader.close();
+      writerEvents.close();
+      writerOccs.close();
+    }
+  }
+
+  /**
+   * @return array of column names in output files for Lepidoptera data (event.txt, occurrence.txt)
    */
   @NotNull
-  private static String[] getHeader() {
+  private static String[] getLepidopteraHeader() {
     String[] header = new String[51];
 
     // ***original columns
@@ -356,7 +551,7 @@ public class RooftopBugs {
     // header 4: name, e.g. Acrolepiopsis assectella Zell.:
     header[4] = "name";
     // header 5: year, e.g. 1994
-    // maps to dwc:year (must pair with dwc:organismQuantityType)
+    // maps to dwc:year
     header[5] = "year";
     // header 6: w, e.g. 1 ex 12.-21.viii.
     header[6] = "w";
@@ -376,8 +571,126 @@ public class RooftopBugs {
     header[12] = "day2";
     // header 13: no_one, e.g. 1
     header[13] = "no_one";
+
+    // ***new augmented columns of information
+
     // header 14: identificationRemarks, e.g. "Either species a or b"
     header[14] = "identificationRemarks";
+    // eventDate range, e.g. 1994-08-12/1994-08-21
+    header[15] = "eventDate";
+    // The material sample was collected, and either preserved or destructively processed.
+    header[16] = "eventRemarks";
+    // Denmark
+    header[17] = "country";
+    // DK
+    header[18] = "countryCode";
+    // Rooftop of Natural History Museum of Denmark
+    header[19] = "locality";
+    // 55·702512
+    header[20] = "decimalLatitude";
+    // 12·558956
+    header[21] = "decimalLongitude";
+    // WGS84
+    header[22] = "geodeticDatum";
+    // modified Robinson light trap
+    header[23] = "samplingProtocol";
+    // time duration in number of trap days
+    header[24] = "sampleSizeValue";
+    // day
+    header[25] = "sampleSizeUnit";
+    // number of trap days
+    header[26] = "samplingEffort";
+    // http://creativecommons.org/licenses/by/4.0/legalcode
+    header[27] = "license";
+    // Event
+    header[28] = "type";
+    // Natural History Museum of Denmark
+    header[29] = "rightsHolder";
+    // ZMUC
+    header[30] = "institutionCode";
+    // ZMUC
+    header[31] = "ownerInstitutionCode";
+    // unique occurrenceID
+    header[32] = "occurrenceID";
+    // MaterialSample
+    header[33] = "basisOfRecord";
+    // Ole Karsholt
+    header[34] = "recordedBy";
+    // Ole Karsholt
+    header[35] = "identifiedBy";
+    // copied from individualCount
+    header[36] = "organismQuantity";
+    // individuals
+    header[37] = "organismQuantityType";
+    // present or absent - depending on individualCount
+    header[38] = "occurrenceStatus";
+    // taxonomy
+    header[39] = "kingdom";
+    header[40] = "phylum";
+    header[41] = "class";
+    header[42] = "family";
+    header[43] = "genus";
+    header[44] = "scientificName";
+    header[45] = "scientificNameAuthorship";
+    header[46] = "taxonRank";
+    header[47] = "taxonID";
+    header[48] = "taxonomicStatus";
+
+    // unique eventID
+    header[49] = "eventID";
+    // to capture name change
+    header[50] = "previousIdentifications";
+
+    // TODO: minimum/maximumElevationInMeters
+
+    return header;
+  }
+
+  /**
+   * @return array of column names in output files for Coleoptera data (event.txt, occurrence.txt)
+   */
+  @NotNull
+  private static String[] getColeopteraHeader() {
+    String[] header = new String[51];
+
+    // ***original columns
+
+    // header 0: order, e.g. COLEOPTERA
+    // maps to dwc:order
+    header[0] = "order";
+    // header 1: group, e.g. ADERIDAE
+    header[1] = "group";
+    // header 2: name, e.g. Aderus populneus (Creutzer)
+    header[2] = "name";
+    // header 3: year, e.g. 1993
+    // maps to dwc:year
+    header[3] = "year";
+    // header 4: date1, e.g. 5/17/93
+    // converted to ISO format 1993-05-17
+    header[4] = "date1";
+    // header 5: date2, e.g. 5/23/93
+    // converted to ISO format 1994-05-23
+    header[5] = "date2";
+    // header 6: individuals, e.g. 1
+    // Total abundance for species recorded during that trap event
+    // maps to dwc:individualCount (must pair with dwc:organismQuantityType)
+    header[6] = "individualCount";
+    // header 7: month1, e.g. 5
+    header[7] = "month1";
+    // header 8: day1, e.g. 17
+    header[8] = "day1";
+    // header 9: month2, e.g. 5
+    header[9] = "month2";
+    // header 10: day2, e.g. 23
+    header[10] = "day2";
+    // header 11: startday, e.g. 137
+    header[11] = "startday";
+    // header 12: endday, e.g. 143
+    header[12] = "endday";
+    // header 13: diff, e.g. 7
+    header[13] = "diff";
+    // header 14: newname, e.g. 44
+    header[14] = "newname";
 
     // ***new augmented columns of information
 
