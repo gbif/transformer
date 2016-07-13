@@ -21,6 +21,8 @@ import java.io.Writer;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Collections;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Map;
@@ -41,13 +43,14 @@ public class RooftopBugs {
 
   private static final Logger LOG = LoggerFactory.getLogger(RooftopBugs.class);
   private static Map<String, NameUsage> names;
+  private static Set<String> events;
+  private static Set<String> validColeopteraNamesNotInNub;
 
   private static final NameUsageMatchingService MATCHING_SERVICE =
     WebserviceClientModule.webserviceClientReadOnly().getInstance(NameUsageMatchingService.class);
 
   private static String lepidopteraEventsFileName = "events-lepidoptera.tab";
   private static String lepidopteraOccurrencesFileName = "occurrences-lepidoptera.tab";
-  private static String coleopteraEventsFileName = "events-coleoptera.tab";
   private static String coleopteraOccurrencesFileName = "occurrences-coleoptera.tab";
 
   public static void main(String[] args) throws IOException {
@@ -55,18 +58,29 @@ public class RooftopBugs {
     names = loadTaxaList();
     LOG.info("Loaded " + names.size() + " unique canonical names.");
 
+    // set of eventIDs
+    events = Sets.newHashSet();
+
+    // valid verified names not existing in GBIF Backbone Taxonomy (Nub)
+    validColeopteraNamesNotInNub = Collections.unmodifiableSet(Sets
+      .newHashSet("Acanthocinus griseus (Fabricius, 1792)", "Aphodius rufipes (Linnaeus, 1758)",
+        "Aphodius rufus (Moll, 1782)", "Aphodius sordidus (Fabricius, 1775)", "Curculio glandium Marsham, 1802",
+        "Curculio nucum Linnaeus, 1758", "Dorytomus rufatus (Bedel, 1886)", "Dorytomus taeniatus (Fabricius, 1781)",
+        "Hylobius abietis (Linnaeus, 1758)", "Magdalis barbicornis (Latreille, 1804)",
+        "Magdalis ruficornis (Linnaeus, 1758)", "Phytobius leucogaster (Marsham, 1802)"));
+
     // create directory where files should be written to
     File output = org.gbif.utils.file.FileUtils.createTempDir();
 
-    // process all Lepidoptera records
+    // first, process all Lepidoptera records (order is important)
     processLepidoptera(output);
     LOG.info("Processing Lepidoptera_1992-2009.csv complete! " + lepidopteraEventsFileName + " and "
              + lepidopteraOccurrencesFileName + " written to: " + output.getAbsolutePath());
 
-    // process all Coleoptera record
+    // second, process all Coleoptera record
     processColeoptera(output);
-    LOG.info("Processing Lepidoptera_1992-2009.csv complete! " + coleopteraEventsFileName + " and "
-             + coleopteraOccurrencesFileName + " written to: " + output.getAbsolutePath());
+    LOG.info("Processing Lepidoptera_1992-2009.csv complete! " + coleopteraOccurrencesFileName + " written to: "
+             + output.getAbsolutePath());
   }
 
   /**
@@ -200,9 +214,6 @@ public class RooftopBugs {
     // observations file
     Writer writerOccs = FileUtils.startOccurrencesFile(output, header, lepidopteraOccurrencesFileName);
 
-    // to capture all unique eventIDs
-    Set<String> events = Sets.newHashSet();
-
     // to capture bad names
     Set<String> namesNotFound = Sets.newTreeSet();
 
@@ -272,10 +283,8 @@ public class RooftopBugs {
         // store sampleSize even though it's the same as samplingEffort
         modifiedRecord[24] = String.valueOf(Math.round(days));
 
-        // construct unique eventID for this sampling period
-        // Format: "urn:[institutionID]:[startDate/endDate]"
-        // Example: "urn:zmuc:1994-08-12/1994-08-21"
-        modifiedRecord[49] = "urn:zmuc:" + modifiedRecord[15];
+        // eventID for this sampling period
+        modifiedRecord[49] = constructEventID(modifiedRecord[15]);
 
         // find name in taxa list
         String name = modifiedRecord[4].trim();
@@ -323,10 +332,9 @@ public class RooftopBugs {
         writerOccs.write(row);
 
         // only output line to events file if event hasn't been included yet
-        String eventID = modifiedRecord[2];
-        if (!events.contains(eventID)) {
+        if (!events.contains(modifiedRecord[49])) {
           writerEvents.write(row);
-          events.add(eventID);
+          events.add(modifiedRecord[49]);
         }
       }
       LOG.info("Iterated over " + line + " rows.");
@@ -363,22 +371,16 @@ public class RooftopBugs {
    */
   public static void processColeoptera(File output) throws IOException {
     // load the original source file to process
-    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/Coleoptera_1992-2009-1.csv");
+    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/Coleoptera_1992-2009-v2.csv");
 
     // create an iterator on the file
-    CSVReader reader = CSVReaderFactory.build(fis, "UTF-8", ",", '"', 1);
+    CSVReader reader = CSVReaderFactory.build(fis, "UTF-8", ";", '"', 1);
 
     // get header row for the new event and occurrence files that this method will output
     String[] header = getColeopteraHeader();
 
-    // sampling events file
-    Writer writerEvents = FileUtils.startEventsFile(output, header, coleopteraEventsFileName);
-
     // observations file
     Writer writerOccs = FileUtils.startOccurrencesFile(output, header, coleopteraOccurrencesFileName);
-
-    // to capture all unique eventIDs
-    Set<String> events = Sets.newHashSet();
 
     // to capture bad names
     Set<String> namesNotFound = Sets.newTreeSet();
@@ -414,8 +416,7 @@ public class RooftopBugs {
         modifiedRecord[30] = "ZMUC"; // institutionCode
         modifiedRecord[31] = "ZMUC"; // ownerInstitutionCode
         modifiedRecord[33] = "MaterialSample"; // basisOfRecord
-        modifiedRecord[34] = "Jan Pedersen"; // recordedBy
-        modifiedRecord[35] = "Jan Pedersen"; // identifiedBy
+        modifiedRecord[34] = "Ole Karsholt"; // recordedBy
         modifiedRecord[37] = "individuals"; // organismQuantityType
         modifiedRecord[39] = "Animalia"; // kingdom
         modifiedRecord[40] = "Arthropoda"; // phylum
@@ -449,10 +450,15 @@ public class RooftopBugs {
         // store sampleSize even though it's the same as samplingEffort
         modifiedRecord[24] = String.valueOf(Math.round(days));
 
-        // construct unique eventID for this sampling period
-        // Format: "urn:[institutionID]:[startDate/endDate]"
-        // Example: "urn:zmuc:1994-08-12/1994-08-21"
-        modifiedRecord[49] = "urn:zmuc:" + modifiedRecord[15];
+        // all Coleoptera recorded between 1992 and 1999 were identified by Michael Hansen, then Jan Pedersen took over
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.YEAR, 2000);
+        c.set(Calendar.DAY_OF_YEAR, 1);
+        Date mm = c.getTime();
+        modifiedRecord[35] = (startDate.before(mm)) ? "Michael Hansen" : "Jan Pedersen"; // identifiedBy
+
+        // eventID for this sampling period
+        modifiedRecord[49] = constructEventID(modifiedRecord[15]);
 
         // verify taxonomy
         String name = modifiedRecord[2].trim();
@@ -473,11 +479,10 @@ public class RooftopBugs {
 
         // verify name, and add higher taxonomy
         NameUsageMatch match = MATCHING_SERVICE.match(name, rank, cl, false, false);
-        if (match.getMatchType().equals(NameUsageMatch.MatchType.EXACT)) {
+        if (validColeopteraNamesNotInNub.contains(name)) {
+          // skip
+        } else if (match.getMatchType().equals(NameUsageMatch.MatchType.EXACT)) {
           modifiedRecord[48] = match.getStatus().toString();
-          modifiedRecord[39] = match.getKingdom();
-          modifiedRecord[40] = match.getPhylum();
-          modifiedRecord[41] = match.getClazz();
           modifiedRecord[42] = match.getFamily();
           modifiedRecord[43] = match.getGenus();
           modifiedRecord[44] = match.getScientificName();
@@ -500,15 +505,12 @@ public class RooftopBugs {
         String row = FileUtils.tabRow(modifiedRecord);
         writerOccs.write(row);
 
-        // only output line to events file if event hasn't been included yet
-        String eventID = modifiedRecord[2];
-        if (!events.contains(eventID)) {
-          writerEvents.write(row);
-          events.add(eventID);
+        // all Coleoptera sampling events are a subset of all Lepidoptera sampling events
+        if (!events.contains(modifiedRecord[49])) {
+          LOG.error("Sampling event not found: " + modifiedRecord[49]);
         }
       }
       LOG.info("Iterated over " + line + " rows.");
-      LOG.info("Found " + events.size() + " unique events.");
 
       LOG.warn("***** " + namesNotFound.size() + " names not found in taxa list: ");
       for (String notFound : namesNotFound) {
@@ -523,7 +525,6 @@ public class RooftopBugs {
         iter.close();
       }
       reader.close();
-      writerEvents.close();
       writerOccs.close();
     }
   }
@@ -628,13 +629,13 @@ public class RooftopBugs {
     header[39] = "kingdom";
     header[40] = "phylum";
     header[41] = "class";
-    header[42] = "family";
+    header[42] = "gbif_family";
     header[43] = "genus";
     header[44] = "scientificName";
     header[45] = "scientificNameAuthorship";
     header[46] = "taxonRank";
     header[47] = "taxonID";
-    header[48] = "taxonomicStatus";
+    header[48] = "gbif_taxonomicStatus";
 
     // unique eventID
     header[49] = "eventID";
@@ -746,13 +747,13 @@ public class RooftopBugs {
     header[39] = "kingdom";
     header[40] = "phylum";
     header[41] = "class";
-    header[42] = "family";
-    header[43] = "genus";
-    header[44] = "scientificName";
-    header[45] = "scientificNameAuthorship";
+    header[42] = "gbif_family";
+    header[43] = "gbif_genus";
+    header[44] = "gbif_scientificName";
+    header[45] = "gbif_scientificNameAuthorship";
     header[46] = "taxonRank";
-    header[47] = "taxonID";
-    header[48] = "taxonomicStatus";
+    header[47] = "gbif_taxonID";
+    header[48] = "gbif_taxonomicStatus";
 
     // unique eventID
     header[49] = "eventID";
@@ -762,5 +763,17 @@ public class RooftopBugs {
     // TODO: minimum/maximumElevationInMeters
 
     return header;
+  }
+
+  /**
+   * Construct unique eventID for this sampling period using format: "urn:[institutionID]:[startDate/endDate]". E.g.
+   * "urn:zmuc:1994-08-12/1994-08-21"
+   *
+   * @param eventDate event date
+   *
+   * @return eventID
+   */
+  private static String constructEventID(@NotNull String eventDate) {
+    return "urn:zmuc:" + eventDate;
   }
 }
