@@ -151,6 +151,7 @@ public class GlobalReefFish {
         }
 
         // lowest rank specified
+        // TODO: taxonRank is unmapped in 2016-07-20 publication - either fix or remove in future publication
         Rank rank = TermUtils.lowestRank(cl);
         if (rank != null) {
           modifiedRecord[29] = rank.toString();
@@ -263,7 +264,7 @@ public class GlobalReefFish {
     // header 11: Depth, e.g. 4 metres
     // RLS definition: Mean depth of transect line as recorded on dive computer (note: this does not account for tide or deviations from the mean value as a consequence of imperfect tracking of the depth contour along the bottom))
     // maps to dwc:verbatimDepth
-    header[11] = "verbatimDepth"; // TODO: should append m for metres
+    header[11] = "verbatimDepth";
 
     // header 12: Phylum
     // RLS definition: Taxonomic Phylum
