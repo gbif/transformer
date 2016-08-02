@@ -79,7 +79,7 @@ public class RooftopBugs {
 
     // second, process all Coleoptera record
     processColeoptera(output);
-    LOG.info("Processing Lepidoptera_1992-2009.csv complete! " + coleopteraOccurrencesFileName + " written to: "
+    LOG.info("Processing Coleoptera_1992-2009.csv complete! " + coleopteraOccurrencesFileName + " written to: "
              + output.getAbsolutePath());
   }
 
@@ -371,7 +371,7 @@ public class RooftopBugs {
    */
   public static void processColeoptera(File output) throws IOException {
     // load the original source file to process
-    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/Coleoptera_1992-2009-v2.csv");
+    InputStream fis = RooftopBugs.class.getResourceAsStream("/datasets/nhmd/Coleoptera_1992-2009-v3.csv");
 
     // create an iterator on the file
     CSVReader reader = CSVReaderFactory.build(fis, "UTF-8", ";", '"', 1);
