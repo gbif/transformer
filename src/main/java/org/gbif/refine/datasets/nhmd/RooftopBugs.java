@@ -497,9 +497,9 @@ public class RooftopBugs {
         }
 
         // construct unique occurrenceID for this abundance record:
-        // Format: "urn:[institutionCode]:[startDate/endDate]:[taxonID]"
+        // Format: "urn:[institutionCode]:[startDate/endDate]:[row#]"
         // Example: "urn:zmuc:1994-08-12/1994-08-21:1301"
-        modifiedRecord[32] = modifiedRecord[49] + ":" + modifiedRecord[47];
+        modifiedRecord[32] = modifiedRecord[49] + ":" + line;
 
         // always output line to new occurrences file
         String row = FileUtils.tabRow(modifiedRecord);
@@ -662,7 +662,8 @@ public class RooftopBugs {
     // header 1: group, e.g. ADERIDAE
     header[1] = "group";
     // header 2: name, e.g. Aderus populneus (Creutzer)
-    header[2] = "name";
+    // maps to dwc:scientificName
+    header[2] = "scientificName";
     // header 3: year, e.g. 1993
     // maps to dwc:year
     header[3] = "year";
