@@ -497,9 +497,9 @@ public class RooftopBugs {
         }
 
         // construct unique occurrenceID for this abundance record:
-        // Format: "urn:[institutionCode]:[startDate/endDate]:[row#]"
-        // Example: "urn:zmuc:1994-08-12/1994-08-21:1301"
-        modifiedRecord[32] = modifiedRecord[49] + ":" + line;
+        // Format: "urn:[institutionCode]:[startDate/endDate]:coleoptera:[row#]"
+        // Example: "urn:zmuc:1994-08-12/1994-08-21:coleoptera:1301"
+        modifiedRecord[32] = modifiedRecord[49] + ":coleoptera:" + line;
 
         // always output line to new occurrences file
         String row = FileUtils.tabRow(modifiedRecord);
