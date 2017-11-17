@@ -1,2 +1,2 @@
-# refine
-Scripts used to refine (clean, transform, augment) data sets
+# Transformer
+Scripts used to clean, augment and transform data sets from occurrence into sampling-event format.
