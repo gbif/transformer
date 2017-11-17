@@ -30,8 +30,15 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This class is used to clean, augment, and transform the original Global Reef Fish dataset published by Reef Life
- * Survey into a DwC sample event, star-formatted dataset consisting of event records (core records) and their associated
- * occurrences (extension records).
+ * Survey into a DwC sample event, star-formatted dataset consisting of event records (core records) and their
+ * associated occurrences (extension records). The dataset is hosted here http://ipt.ala.org.au/resource?r=global
+ * and indexed here: https://www.gbif.org/dataset/38f06820-08c5-42b2-94f6-47cc3e83a54a The publisher expressed
+ * a desire to republish this dataset biannually hence thousands of new observations get added each month. At least
+ * the publisher (Rick Stuart-Smith) has an account on the ALA IPT and familiar with updating its metadata. To update
+ * its data, however, it needs to be downloaded from RLS' GeoServer here:
+ * http://geoserver-rls.imas.utas.edu.au/geoserver/RLS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=RLS:M1_DATA&outputFormat=csv
+ * Then input into this script. The output are two files (events and occurrences) that can then be uploaded to the IPT
+ * and used to republish the dataset.
  */
 public class GlobalReefFish {
 

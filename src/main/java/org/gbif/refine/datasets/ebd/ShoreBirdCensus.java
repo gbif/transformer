@@ -32,7 +32,11 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This class used to clean, augment, and transform the original ShoreBirdCensus_1993.csv dataset published by EBD-CSIC
- * into a DwC sample-based, star format with event records with associated occurrences.
+ * into a DwC sample-based, star format with event records with associated occurrences hosted here:
+ * http://ipt.gbif.es/resource?r=donana and indexed here:
+ * https://www.gbif.org/dataset/9a57e938-3616-4f8c-985a-c9b66e7a1347 Despite being an LTER site, the publisher
+ * hasn't communicated a desire to republish this dataset again.
+ *
  */
 public class ShoreBirdCensus {
   private static final Logger LOG = LoggerFactory.getLogger(ShoreBirdCensus.class);

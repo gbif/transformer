@@ -37,7 +37,10 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This class is used to clean, augment, and transform the original RooftopBugs dataset published by the Natural
- * History Museum of Denmark into a DwC sample-based, star format with event records with associated occurrences.
+ * History Museum of Denmark into a DwC sample-based, star format with event records with associated occurrences hosted
+ * here: http://danbif.au.dk/ipt/resource?r=rooftop and indexed here:
+ * https://www.gbif.org/dataset/f506be53-9221-4b44-a41d-5aa0905ec216 This long-term monitoring project has ended
+ * and the publisher isn't likely to want to change/republish it again in the future.
  */
 public class RooftopBugs {
 

@@ -30,7 +30,9 @@ import org.slf4j.LoggerFactory;
 /**
  * This class is used to generate a unique list of taxa from a dataset published by National Museums of Kenya (NMK)
  * and augment it by adding a taxonID column. It also does some quality control, matching each species against the
- * GBIF Backbone Taxonomy.
+ * GBIF Backbone Taxonomy. The dataset is hosted here http://ipt.museums.or.ke/ipt/resource?r=nmk2016 and indexed here:
+ * https://www.gbif.org/dataset/086d0402-a5e1-42ae-b67f-ac6244178fa2 The publisher hasn't expressed any desire to
+ * republish this dataset.
  */
 public class RedList {
 

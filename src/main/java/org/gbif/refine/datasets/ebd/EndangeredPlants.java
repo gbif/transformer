@@ -27,7 +27,9 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This class used to clean, augment, and transform the original EndangeredPlantsCoverage.csv dataset published by
- * EBD-CSIC into a DwC sample-based, star format with event records with associated occurrences.
+ * EBD-CSIC into a DwC sample-based, star format with event records with associated occurrences. It is hosted by
+ * GBIF Spain here: http://ipt.gbif.es/resource?r=donana2 But GBIF Spain hasn't registered it with GBIF yet, as they
+ * will do this in collaboration with the publisher who was on maternity leave at the time of writing this script.
  */
 public class EndangeredPlants {
   private static final Logger LOG = LoggerFactory.getLogger(EndangeredPlants.class);

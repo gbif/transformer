@@ -24,7 +24,10 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This class is used to validate scientific names from the Large mammals in Israel from camera traps dataset
- * published by Hamaarag hosted here: http://cloud.gbif.org/eubon/resource?r=camera
+ * published by Hamaarag hosted here: http://cloud.gbif.org/eubon/resource?r=camera and indexed here:
+ * https://www.gbif.org/dataset/cdae52c7-a6f2-460e-b0e9-33c795a34224 The publisher hasn't communicated a desire to
+ * republish this dataset again. Ideally it would have images added to it, however, and be updated and republished
+ * on the Israel GBIF IPT (not operational yet as of November 2017).
  */
 public class CameraTraps {
 
